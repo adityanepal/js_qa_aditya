@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Validation</title>
+    </head>
+    <body>
+        <form action="" name="myform" onsubmit="login.validate();">
+            Email:<input type="email" name="Email" placeholder="Enter your email">
+            Password:<input type="password" name="Password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+</body>
+<footer>
+    <script>
+        class Login{
+            validate(){
+            var email =document.myform.Email.value;
+
+            var pass =document.myform.Password.value;
+
+            if(email==null || email==""){
+
+                alert("Email cannot be empty");
+                location.reload();
+            }
+            else if(pass==null || pass==""){
+                alert("Password cannot be empty.");
+                location.reload();
+            }
+            else if (email=="adityanepal08@gmail.com" &&  pass==="aditya"){
+                alert("Login Successful");
+                location.reload();
+            }else{
+                alert("Login Credential doesnt match.");
+                location.reload();
+            }
+        }
+        }
+        var login=new Login();
+    </script>
+</footer>
+</html>
