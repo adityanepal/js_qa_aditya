@@ -5,14 +5,14 @@ function cook_list(){
       },2000)
     })
   }
-async function dashain_activities(){
+async function dashain_activities(){ //async function for asynchronous process.
 
-console.log("Hello");
+console.log("Hello"); //printing Hello
 
-await cook_list();
+await cook_list(); //using await keyword for getting value.
 
 console.log("I would Perfer Chicken.");
 console.log("Thank you!!!");
 
 }
-dashain_activities(); 
+dashain_activities(); //calling dashain_activities.
